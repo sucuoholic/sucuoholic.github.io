@@ -1,0 +1,195 @@
+    #container{
+		width:1002px;
+	    margin:0px auto;
+	}
+	#header{
+		height:128px;
+		background:gray url(./top_bg.jpg);
+        background-attachment: scroll;
+	}
+	#nav li {
+        float:left;
+        width:91px;
+    }
+    #nav a{
+        color:#363636;
+        font-size:16px;
+        line-height: 37px;
+        text-align:center;
+        text-decoration:none;
+        font-family: '微软雅黑';
+        display: block;
+        height:37px;
+        width:91px;
+
+    }
+    #nav a:hover{
+        color:white;
+        background-image:url(./nav_on.gif);
+        background-attachment: scroll;
+    }
+    #image{
+        height:237px;
+        margin:6px 1px 6px 1px;
+    }
+    #image img{
+     
+    }
+    #main{ 
+        width:1002px;
+    }
+    #lside{
+        width:694px;
+        height:480px;
+        border:1px solid #EEE;
+        float:left;
+    }
+    .subtitle{
+        height:37px;
+        background:#EEE;
+    }
+    .clr{
+        clear:both;
+        height:0px;
+        width:0px;
+    }
+    .subtitle img{
+        float:left;
+        margin:4px 8px 0px 10px;
+    }
+    .subtitle h1{
+        float: left;
+        text-align:center;
+        font-size:16px;
+        line-height:36px;
+        font-family:"微软雅黑","黑体",sans-serif;
+    }
+    .subtitle a{
+        float:right;
+        color:black;
+        font:12px/36px Tahoma,Verdana,Arial,sans-serif;
+        margin-right:12px;
+    }
+    .four{
+        width:326px;
+        height:198px;
+        background:#EEE;
+        margin:10px;
+        float:left;
+    }
+    .four h3{
+        font:16px/16px "微软雅黑","黑体",sans-serif;
+        color:#A0A0A0;
+        margin:10px 0px 2px 12px;
+    }
+    .four img{
+        float: left;
+        width:179px;
+        height:145px;
+        background:#FFF;
+        padding:5px;
+        margin:5px 10px 0px 12px;
+    }
+    .four li{
+        background-image:url(./service_intro_bg.gif);
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left:16px;
+        float:left;
+    }
+    .four a{
+        height:24px;
+        font:12px/24px "宋体",serif;
+        color:#858585;
+        display:block;
+    }
+    .four a:hover{
+        color:orange;
+        text-decoration:underline;
+    }
+    #rside{
+        width:294px;
+        height:480px;
+        float:right;
+    }
+    #art{
+        height:200px;
+        margin:1px 0px 20px 0px;
+        padding-bottom:8px;
+        border-radius:0px 0px 5px 5px;
+        background:#EEE none repeat scroll 0% 0%;
+    }
+    #art li{
+        height:29px;
+    }
+    #art li a{
+        height:29px;
+        font:12px/29px "宋体",serif;
+        color:#808080;
+        padding-left:28px;
+        background:#EEE url(./article_head.gif) no-repeat scroll;         
+        display:block;  
+    }
+    #art li a:hover{
+        background-image:url(./article_on_bg.gif);
+        color:orange;
+    }
+    #contact_info{
+        font:12px/21px "宋体",serif;
+        margin-top:1px;
+        padding:20px 0px 68px 20px;
+        border-radius:0px 0px 5px 5px;
+        color:#808080;
+        background:#EEE;
+    }
+    #contact_info dt{
+        width:30px;
+        height:21px;
+        float:left;
+        clear:left;
+    }
+    #contact_info dd{
+        height:21px;
+    }
+    #footer{
+        width:1002px;
+        font-size:12px;
+        font-family:"宋体",serif;
+        margin-top:10px;        
+    }
+    #footer ul{
+        height:35px;        
+        border-radius:5px;
+        background:#EEE;
+    }
+    #footer li{
+        float:left;    
+        margin-top:10px;
+    }
+    #footer li a{
+        color:#939393;
+        margin:0px 12px;
+    }
+    #footer li a:hover{
+        color:orange;
+    }
+    #footer p{
+        color:#939393;
+        font-size:12px;
+        font-family:Arial,Tahoma,serif;
+        padding:10px 0px;
+    }
+    #footer p a{
+        color:#939393;
+    }
+    #footer p a:hover{
+        text-decoration:underline;
+    }
+    #footer p span a{
+        color:#FF823C;
+    }
+    #footer p span a:hover{
+        text-decoration:underline;
+        color:#808080;
+    }

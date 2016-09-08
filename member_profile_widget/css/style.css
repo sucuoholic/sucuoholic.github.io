@@ -1,0 +1,204 @@
+body{
+	width:1349px;
+	height:771px;
+	background-image:url("../images/ban.jpg");
+	background-position:left center;
+}
+#container{
+	padding:3em;
+	font-family: "Josenfin Slab",serif;
+	font-size:16px;
+	font-weight:400;
+	font-style: normal;
+	line-height: 20px;
+	padding:48px 0;
+	margin:0 auto;
+}
+#container h1{
+	font-size:35px;
+	color:#fff;
+}
+#main{
+	width:60%;
+	margin:60px auto;
+}
+
+#left{
+	width:45%;
+	float:left;
+}
+#login{
+	height:30px;
+	background: #f99104 none repeat scroll 0 0;
+	padding:15px;
+}
+#login h2{
+	text-align:center;
+	font-size: 25px;
+	color:#fff;
+}
+#loginInfor{
+	background-color: white;
+}
+#mail,#password{
+	width:70%;
+	margin-bottom:30px ;
+	padding:10px 10px 10px 50px;
+	border:2px solid #648d9f;
+	border-radius:4px;
+	color:#d8d8d8;
+	font-family:"Josenfin Slab",serif;
+	font-size: 18px;
+}
+#mail{
+	margin-left:15px;
+	margin-top:30px;
+	background:rgba(0,0,0,0) url("../images/user.png") no-repeat scroll 10px 13px;
+
+}
+#password{
+	margin-left:15px;
+	background:rgba(0,0,0,0) url("../images/key.png") no-repeat scroll 10px 13px;
+}
+#Signin{
+	height:60px;
+	width:100%;
+	background: #f99104 none repeat scroll 0 0;
+	padding:15px;	
+	text-align:center;
+	font-size: 25px;
+	color:#fff;
+	display:block;
+	border-width:0px;
+	margin-bottom:0px;
+	background-image:url("../images/submit.png");
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+	background-position:224px 20px;
+	cursor:pointer;
+}
+#left ul li{
+	margin:25px 0;
+}
+#left ul li a{
+	width:100%;
+	height:24px;
+	color:#fff;
+	display:block;
+	font-size:20px;
+	padding:9px 0;
+	text-align:center;
+}
+#left ul li a:hover{
+	opacity:0.7;
+}
+#left ul li a.facebook {
+	background:#3b5998 none repeat scroll 0 0;
+	cursor:pointer;
+}
+#left ul li a.tw{
+	background:#3b5998 none repeat scroll 0 0;
+	cursor:pointer;
+}
+#left ul li a.facebook span{
+	width:50px;
+	height:24px;
+	background-image:url("../images/fb.png");
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+	background-position:17px 3px;
+	display:inline-block;
+	vertical-align: text-bottom;//垂直反向上对齐文字的底部
+}
+#left ul li a.tw span{
+	width:50px;
+	height:24px;
+	background-image:url("../images/twitt.png");
+	background-repeat:no-repeat;
+	background-attachment: scroll;
+	background-position:17px 3px;
+	display:inline-block;
+	vertical-align: text-bottom;//垂直反向上对齐文字的底部
+}
+#right{
+	width:50%;
+	margin-left:5%;
+	float:left;
+}
+#right #right_profile{
+	min-height:314px;
+	padding:30px 0;
+	background-size: cover;
+	background:url("../images/banner.jpg") no-repeat scroll bottom;
+}	
+#right #right_profile #img{
+	width:33%;
+	/*height:145px;*/
+	border:2px solid #fff;
+	margin:0 auto;
+	padding:20px;
+
+}
+#right #right_profile #img img{
+	max-width: 100% /*该属性值会对元素的宽度设置一个最高限制。元素可以比指定值窄，但不能比其宽，不允许指定负值*/
+}
+#right #right_profile h3{
+	color:#fff;
+	font-family: "Josenfin Slab",serif;
+	font-size: 36px;
+	font-weight: 900;
+	margin-top:20px;
+	text-align:center;
+}
+#right #right_profile p{
+	color:#fff;
+	font-size: 20px;
+	font-weight:500;
+	margin-top:9px;
+	text-align: center;
+}
+#right #followers{
+	color:#fff;
+	width:49.5%;
+	background:#f99104 none repeat scroll 0 0;
+	font-size: 20px;
+	text-align: center;
+	margin:0 1% 100px 0;
+	float:left;
+	padding-top:20px;
+}
+#right #following{
+	color:#fff;
+	width:49.5%;
+	background:#f99104 none repeat scroll 0 0;
+	font-size: 20px;
+	text-align: center;
+	float:left;
+	padding-top:20px;
+	margin-bottom:100px;
+}
+#right #followers p{
+	font-size: 15px;
+}
+#right #following p{
+	font-size: 15px;
+
+}
+#clear{
+	clear:both;
+}
+
+#footer{
+	clear:both;
+	margin-top:0px;
+}
+#footer p{
+	color:#fff;
+	font-size:17px;
+}
+#footer p a{
+	color:#000;
+}
+#footer p a:hover{
+	color:#fff;
+}

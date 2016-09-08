@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>Member Profile Widget</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/style.css" />
+<script>
+    window.onload = function(){
+        var signin = document.getElementById("Signin");
+        signin.onmouseover = function(){
+            this.style.backgroundColor = "black";
+        }
+        signin.onmouseout = function(){
+            this.style.backgroundColor = "#f99104";
+        }
+
+
+        var mail = document.getElementById("mail");
+        var password = document.getElementById("password");
+        mail.onblur = function(){
+            var val1 = this.value;
+            if(val1 == ""){
+                this.value="Enter your email";
+            }
+        }
+        mail.onfocus = function(){
+            var val2 = this.value;
+            if(val2 == "Enter your email"){
+                this.value = "";
+            }
+        }
+        password.onblur = function(){
+            var val3 = this.value;
+            if(val3 == ""){
+                this.value ="password";
+            }
+        }
+        password.onfocus = function(){
+            var val4 = this.value;
+            if(val4 == "password"){
+                this.value = "";
+            }
+        }
+    }
+</script>
+</head>
+    <body>
+    <div id="container">
+    	<h1 align="center">Member Profile Widget</h1>
+    	<div id="main">
+    		<div id="left">
+    			<div id="login"><h2>Login</h2></div>
+    			<form action="#" id="loginInfor">
+    				<input type="text" id="mail" value="Enter your email" required="" /><br>
+    				<input type="password" id="password" value="password" required="" /><br>
+    				<input type="submit" id="Signin" value="Signin" />
+    			</form>
+    			<ul>
+    				<li><a href="#" class="facebook"><span></span>Facebook</a></li>
+    				<li><a href="#" class="tw"><span></span>Twitter</a></li>
+    			</ul>
+    		</div>
+    		<div id="right">
+    			<div id="right_profile">
+    				<div id="img"><img src="./images/pic2.jpg" alt="" /></div>
+    				<h3>Victoria</h3><br>
+    				<p>Actores</p>
+    			</div>
+    			<div id="followers">
+    				<h5>Followers</h5><br>
+    				<p>2k</p>
+    			</div>
+    			<div id="following">
+    				<h5>Following</h5><br>
+    				<p>3k</p>
+    			</div>
+    			<div class="clear"></div>
+    		</div>
+    	</div>
+    	<div class="clear"></div>
+    	<div id="footer">
+    		<p align="center">@ 2016 Member Profile Widget. All Rights Reserved | Design by <a href="http://w2layouts.com">W3layouts</a></p>
+    	</div>
+    </div>
+    </body>
+</html>

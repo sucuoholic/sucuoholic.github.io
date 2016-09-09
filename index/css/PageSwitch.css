@@ -1,0 +1,264 @@
+/*reset*/
+*{box-sizing: border-box;}
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal; }
+li { list-style:none; }
+a { text-decoration:none; }
+img { border:none; vertical-align:top; }
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+img {
+    max-width: 100%;
+}
+a{
+    color: #ffffff;
+}
+a:hover {
+    opacity: .8;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*字体图标*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?csydly');
+    src:  url('../fonts/icomoon.eot?csydly#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?csydly') format('truetype'),
+    url('../fonts/icomoon.woff?csydly') format('woff'),
+    url('../fonts/icomoon.svg?csydly#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-book:before {
+    content: "\e91f";
+}
+.icon-mobile:before {
+    content: "\e958";
+}
+.icon-cogs:before {
+    content: "\e995";
+}
+.icon-chrome:before {
+    content: "\ead9";
+}
+
+
+.icon-github:before {
+    content: "\eab0";
+}
+
+
+/*分页图标*/
+#pages {
+    position: fixed;
+    right: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style:none;
+}
+
+#pages li {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 0 0.625rem 0.3125rem;
+}
+
+#pages li.active {
+    width: 0.875rem;
+    height: 0.875rem;
+    border: 0.125rem solid #fffe00;
+    background: none;
+    margin-left: 0.12rem;
+}
+
+
+/*最外层，整个网页的容器*/
+#PageWrap {
+    height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 1s ease;
+}
+
+#PageWrap .section {
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-image: url("http://yixin.dl.126.net/images/newimages/bgs/bg.png?v=2");
+    background-position: 50% 50%;
+}
+
+
+/*第一页信息*/
+.section .container0 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#userIcon {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 5rem;
+    border: 0.635rem solid hsla(0 , 0%, 100%, .5);
+    background-clip: padding-box;
+}
+
+.info {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin: 1.2rem 0;
+    white-space: nowrap;
+}
+
+
+/*第二页信息*/
+.section .container1 {
+    padding: 2rem 3rem;
+    overflow: auto;
+    height: 100%;
+}
+
+#project_title {
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding: 0 0.2rem;
+    border-bottom: 2px solid #ffffff;
+}
+
+.demo {
+    width: 40%;
+    margin: 10% 5% 0;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.demo-icon {
+    font-size: 6rem;
+    float: left;
+    padding-right: 1rem;
+}
+
+.demo_title {
+    font-size: 2rem;
+    font-weight:bold;
+    display: inline-block;
+    padding-bottom: .2rem;
+}
+
+/*第三页信息*/
+.section .container2 {
+    padding: 2rem 3rem;
+    overflow: auto;
+    height: 100%;
+}
+
+#learn_title {
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding: 0 0.2rem;
+    border-bottom: 2px solid #ffffff;
+}
+
+.github {
+    width: 40%;
+    margin: 8% 5% 0;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.github-icon {
+    font-size: 6rem;
+    float: left;
+    padding-right: 1rem;
+}
+
+.github_title {
+    font-size: 2rem;
+    font-weight:bold;
+    display: inline-block;
+    padding-bottom: .2rem;
+}
+
+/*响应式设置手机端属性*/
+@media all and (max-width: 800px){
+
+    html{
+        font-size: 9px;
+    }
+
+    #PageWrap{
+        transition: all .3s ease;
+    }
+
+    #PageWrap .section {
+        background-image: url("../images/mbg-1.png");
+    }
+
+    .demo {
+        width: 90%;
+        margin: 12% 5% 0;
+    }
+
+    .demo-icon {
+        font-size: 7rem;
+        color: #ffffff;
+    }
+
+    .demo_detail {
+        font-size: 1.2rem;
+    }
+
+    .github {
+        width: 90%;
+        margin: 15% 5% 0;
+    }
+
+    .github_detail {
+        font-size: 1.2rem;
+    }
+}
+
+
